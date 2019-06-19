@@ -13,7 +13,7 @@ import com.murilo3m.apirest.webflux.services.PlaylistService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-@RestController
+//@RestController
 public class PlaylistController {
 	
 	@Autowired
