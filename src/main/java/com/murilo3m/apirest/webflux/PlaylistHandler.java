@@ -14,9 +14,7 @@ import com.murilo3m.apirest.webflux.services.PlaylistService;
 
 import reactor.core.publisher.Mono;
 
-
-
-@Component
+//@Component
 public class PlaylistHandler {
 	
 	@Autowired
@@ -41,6 +39,4 @@ public class PlaylistHandler {
 				.contentType(MediaType.APPLICATION_JSON)
 				.body(fromPublisher(playlist.flatMap(service::save), Playlist.class));
 	}
-	
-	
 }
